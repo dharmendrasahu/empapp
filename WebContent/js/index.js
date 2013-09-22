@@ -14,16 +14,22 @@ function validateForm(){
 	var sexM=document.getElementById("sex_m").checked;
 	var sexF=document.getElementById("sex_f").checked;
 	
-	/*var degree=document.getElementsByName("DEGREE");
+	var degree=document.getElementsByName("DEGREE");
 	var board=document.getElementsByName("BOARD");
 	var from=document.getElementsByName("FROM_Y");
 	var to=document.getElementsByName("TO_Y");
 	var duration=document.getElementsByName("DURATION");
-	var percent=document.getElementsByName("GRADE");*/
+	var percent=document.getElementsByName("GRADE");
 	if (grade==null || grade==""){
 	  validationStatus= false;
 	  errormsg+="Grade is required field.";
 	  }
+	if (grade!=null || grade!=""){
+		if(grade.length>3){
+			  validationStatus= false;
+			  errormsg+="Grade length should be 2 characters.";		  
+		  }
+	}
 	  if (position==null || position==""){
 	  errormsg+="<br/>Position is required field.";
 	  validationStatus= false;
@@ -61,34 +67,58 @@ function validateForm(){
 	  errormsg+="<br/>Date of birth is required field.";
 	  validationStatus= false;
 	  }
-	//  alert("lenght"+degree.length());
-	 /* for(var index=0;index<degree.length();index++){
-		  alert(index);
+	
+	  for(var index=0;index<degree.length;index++){
 		  if (degree[index]==null || degree[index]==""){
 			  errormsg+="<br/>Degree is required field.";
 			  validationStatus= false;
 		  }
-		  if (board[index]==null || board[index]==""){
+		  if(board!=null && degree.length){
+			  if (board[index]==null || board[index]==""){
+				  errormsg+="<br/>Board is required field.";
+				  validationStatus= false;
+			  }
+		  }else{
 			  errormsg+="<br/>Board is required field.";
 			  validationStatus= false;
 		  }
-		  if (from[index]==null || from[index]==""){
-			  errormsg+="<br/>From is required field.";
+		  if(from!=null && degree.length){
+			  if (from[index]==null || from[index]==""){
+				  errormsg+="<br/>From is required field.";
+				  validationStatus= false;
+			  }
+		  }else{
+			  errormsg+="<br/>Board is required field.";
 			  validationStatus= false;
 		  }
-		  if (to[index]==null || to[index]==""){
-			  errormsg+="<br/>To is required field.";
+		  if(to!=null && degree.length){
+			  if (to[index]==null || to[index]==""){
+				  errormsg+="<br/>To is required field.";
+				  validationStatus= false;
+			  }
+		  }else{
+			  errormsg+="<br/>Board is required field.";
 			  validationStatus= false;
 		  }
-		  if (duration[index]==null || duration[index]==""){
-			  errormsg+="<br/>Duration is required field.";
+		  if(duration!=null && degree.length){
+			  if (duration[index]==null || duration[index]==""){
+				  errormsg+="<br/>Duration is required field.";
+				  validationStatus= false;
+			  }
+		  }else{
+			  errormsg+="<br/>Board is required field.";
 			  validationStatus= false;
 		  }
+		  if(percent!=null && degree.length){
 		  if (percent[index]==null || percent[index]==""){
 			  errormsg+="<br/>percent is required field.";
 			  validationStatus= false;
 		  }
-	  }*/
+		  }else{
+			  errormsg+="<br/>Board is required field.";
+			  validationStatus= false;
+		  }
+	  }
 	  if(!validationStatus){
 	  	document.getElementById("officialdetail_errormsg").innerHTML=errormsg;
 	  	return false;

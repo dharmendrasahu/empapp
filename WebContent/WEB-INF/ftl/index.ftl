@@ -120,7 +120,7 @@
 					<td><input type="text" name="BOARD" class="qualificationtext"/></td>
 					<td><input type="text" name="FROM_Y" class="qualificationtext"/></td>
 					<td><input type="text" name="TO_Y" class="qualificationtext"/></td>
-					<td><input type="text" name="DURATION" class="qualificationtext" onKeyup="isInteger(this.value)"/></td>
+					<td><input type="text" name="DURATION" class="qualificationtext" onKeyup="isInteger(this.value)" value="0"/></td>
 					<td><input type="text" name="GRADE" class="qualificationtext"/></td>
 					<td><input type="button" id="btn_add_qualification" value="Add"/></td>
 			</tr>
