@@ -1,0 +1,21 @@
+ul
+{
+	list-style-type:none;
+	margin:1;
+	padding:1;
+	padding-top:7px;
+	padding-bottom:5px;
+}
+li
+{
+	display:inline;
+}
+	a:link,a:visited
+{
+	font-weight:bold;
+	color:#CC3DD;
+	text-align:center;
+	padding:6px;
+	text-decoration:italic;
+	text-transform:uppercase;
+}

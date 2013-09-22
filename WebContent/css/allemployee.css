@@ -1,0 +1,41 @@
+ body {
+    width: auto;
+    height:auto; 
+    margin-left:auto; 
+    margin-right: auto; 
+ 	background-color: #FFFFFF;
+    font-family: monospace;
+	font-size: 15px;
+    }
+table
+{
+border-collapse:collapse;
+}
+table, td, th
+{
+border:1px solid black;
+}
+ul
+	{
+		list-style-type:none;
+		margin:1;
+		padding:1;
+		padding-top:7px;
+		padding-bottom:5px;
+	}
+	li
+	{
+		display:inline;
+	}
+		a:link,a:visited
+	{
+		font-weight:bold;
+		color:#CC3DD;
+		text-align:center;
+		padding:6px;
+		text-decoration:italic;
+		text-transform:uppercase;
+	}
+	#maintable{
+		margin-left: 65px;
+	}

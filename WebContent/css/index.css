@@ -1,0 +1,98 @@
+ body {
+    width: auto;
+    height:auto; 
+    margin-left:auto; 
+    margin-right: auto; 
+ 	background-color: #FFFFFF;
+    font-family: monospace;
+	font-size: 15px;
+    }
+   div.main{
+	width:95%;
+	height:80%
+	}
+   div.dept{
+	width:80%;
+	height:20%;
+	margin-left: 65px;
+	}
+    fieldset.address {
+	height:190px;
+	width: 89%;
+	position:relative;
+	}
+	td.address{
+	height:160px;
+	width: 40%;
+	}
+	
+	td.addressbutton{
+	height:160px;
+	width: 6%;
+	}
+	
+	td.qualification{
+	padding-left: 9px;
+	}
+	input.name{
+	width: 100%;
+	}
+	
+	.Roundedcorner
+	{
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px;
+	}
+	
+	div.personaldetails{
+	width:300px;
+	height:200px;
+	margin-left: 10px;
+	margin-top: 2px;
+	
+	}
+	fieldset.personalinfo{
+	width: 90%;
+	height:60%;
+	margin-left: 65px;
+	}
+	
+	fieldset.empname {
+/*	float:right;*/
+	height:120px;
+	width: 88%;
+	margin-left: 13px;
+	margin-top: 5px;
+	}
+	table.address{
+	position: relative;
+	width: 50%;
+	float:right;
+	}
+	div.personal_detail{
+	margin-left: 65px;
+	float:left;
+	width:300px;
+	}
+	fieldset.degree{
+	margin-left: 65px;
+	}
+	fieldset.employmentDetails{
+	margin-left: 65px;
+	margin-top: 20px;
+	}
+	
+	#officialdetail_errormsg{
+		margin-left: 65px;
+		font:15px arial,sans-serif;
+		color:red;
+	}
+	.qualificationtext{
+		width:150px;
+		margin-left: 7px;
+		}
+	.personaldetailstext{
+		width:150px;
+	}
